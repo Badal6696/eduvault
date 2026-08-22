@@ -1,0 +1,13 @@
+{
+  "name": "eduvault",
+  "version": "1.0.0",
+  "description": "EduVault - Digital Products & Courses Platform",
+  "scripts": {
+    "dev": "wrangler pages dev .",
+    "deploy": "wrangler pages deploy .",
+    "db:migrate": "wrangler d1 execute eduvault-db --file=schema.sql"
+  },
+  "devDependencies": {
+    "wrangler": "^3.99.0"
+  }
+}

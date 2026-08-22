@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduVault — Digital Products & Courses</title>
+  <meta name="description" content="Premium digital products, online courses, e-books and more." />
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+  <main class="site-shell">
+    <section class="cinema-scroll" id="cinema">
+      <div class="stage">
+        <div class="world">
+          <img class="scene-img sky-img" src="https://raft-blast-61784561.figma.site/_assets/v11/16b5007d9c93971e26ffe4e0e3e37946f6bd538c.png" alt="" />
+
+          <header class="site-header">
+            <a class="site-logo" href="#cinema">EduVault</a>
+            <nav class="site-nav">
+              <a href="#cinema">Home</a>
+              <a href="#dynamic-courses">Courses</a>
+              <a href="#contact-page-section">Contact Us</a>
+              <a href="#" id="catalog-nav-btn">Catalog</a>
+            </nav>
+            <div class="header-right">
+              <button class="cart-icon-btn" id="cart-icon-btn">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                <span class="cart-count" id="cart-count">0</span>
+              </button>
+              <button class="admin-login-btn" id="admin-login-open">Login</button>
+              <button class="admin-login-btn" id="user-logout-btn" style="display:none">Logout</button>
+              <span class="user-name-display" id="user-name-display" style="display:none"></span>
+            </div>
+          </header>
+
+          <div class="back-stack">
+            <img class="scene-img back-img back-four" src="https://raft-blast-61784561.figma.site/_assets/v11/8a7f8af50e0ce92ec2e228e7b0b4112178c51cf1.png" alt="" />
+            <section class="sights-slider">
+              <div class="sights-track"></div>
+            </section>
+            <img class="scene-img back-img back-bazaar" src="https://raft-blast-61784561.figma.site/_assets/v11/864afe00e41e2fa20a5aa546e15cb807e0f81384.png" alt="" />
+          </div>
+
+          <div class="sights-controls">
+            <button class="sight-nav sight-prev">←</button>
+            <button class="sight-nav sight-next">→</button>
+          </div>
+
+          <h1 class="hero-title">EDUVAULT</h1>
+          <img class="scene-img splitframe-img splitframe-left" src="https://raft-blast-61784561.figma.site/_assets/v11/7536d7b60a1fce482cf6edf3f0bffd3bad5d0f8a.png" alt="" />
+          <img class="scene-img splitframe-img splitframe-right" src="https://raft-blast-61784561.figma.site/_assets/v11/392db6a6a6b98e868bd7f8d3f55bb719d51e5028.png" alt="" />
+          <img class="scene-img bridge-img" src="https://raft-blast-61784561.figma.site/_assets/v11/c6a6d8ef49bca43f708aa852692942c45ec950d4.png" alt="" />
+          <img class="scene-img frame-two-img" src="https://raft-blast-61784561.figma.site/_assets/v11/ba75252bab2b1c510987b74837770f7bc8a6b2d4.png" alt="" />
+          <div class="shade"></div>
+        </div>
+
+        <section class="intro-copy">
+          <p>Premium digital products, structured courses and instant-download resources — built for creators who sell and learners who grow.</p>
+          <div class="hero-tags">
+            <span>Online Courses</span>
+            <span>Instant Downloads</span>
+            <span>Lifetime Access</span>
+          </div>
+        </section>
+
+        <section class="story-panel story-panel-bridge" id="courses-section">
+          <h2>Every course is a complete journey.</h2>
+          <p>Modules, lessons, video content and quizzes organised into a structured path — students get access the moment payment clears.</p>
+          <dl class="facts">
+            <div><dt>10 k+</dt><dd>Students enrolled across all courses</dd></div>
+            <div><dt>4.9★</dt><dd>Average rating from verified buyers</dd></div>
+          </dl>
+        </section>
+      </div>
+    </section>
+
+    <!-- Hero Banner Section (Customizable) -->
+    <section class="hero-banner-section" id="hero-banner-section">
+      <div class="hero-banner-container">
+        <div class="hero-banner-content">
+          <h2 class="hero-banner-title" id="hero-banner-title">Transform Your Learning Journey</h2>
+          <p class="hero-banner-description" id="hero-banner-description">Discover premium courses and digital products designed to accelerate your success. Join thousands of students who have already transformed their careers.</p>
+          <div class="hero-banner-buttons" id="hero-banner-buttons">
+            <a href="#dynamic-courses" class="hero-btn hero-btn-primary">Explore Courses</a>
+            <a href="#contact-page-section" class="hero-btn hero-btn-secondary">Contact Us</a>
+          </div>
+        </div>
+        <div class="hero-banner-image" id="hero-banner-image">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop" alt="Learning" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section (New Customizable Section) -->
+    <section class="features-section" id="features-section">
+      <div class="features-container">
+        <h2 class="features-title" id="features-title">Why Choose EduVault?</h2>
+        <div class="features-grid" id="features-grid">
+          <!-- Features will be dynamically loaded here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Dynamic Courses Section (below scroll) -->
+    <section class="dynamic-courses-section" id="dynamic-courses">
+      <h2 class="section-title">Our Courses</h2>
+      <div class="courses-grid" id="courses-grid"></div>
+    </section>
+
+    <!-- Contact Us Section (outside sticky container) -->
+    <section class="contact-page-section" id="contact-page-section">
+      <div class="contact-page-container">
+        <h2 class="section-title" id="contact-heading">Get in Touch</h2>
+        <p class="contact-page-desc" id="contact-description">We'd love to hear from you. Reach out for any queries, collaborations or support.</p>
+        <div class="contact-page-details">
+          <div class="contact-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <div>
+              <h4>Email</h4>
+              <p id="contact-email">info@eduvault.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <div>
+              <h4>Phone</h4>
+              <p id="contact-phone">+91 98765 43210</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <div>
+              <h4>Address</h4>
+              <p id="contact-address">Mumbai, India</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col" id="footer-col-1"><h4>EduVault</h4><p>Premium digital products & courses.</p></div>
+      <div class="footer-col" id="footer-col-2">
+        <h4>Quick Links</h4>
+        <p><a href="#cinema">Home</a></p>
+        <p><a href="#dynamic-courses">Courses</a></p>
+        <p><a href="#contact-page-section">Contact Us</a></p>
+      </div>
+      <div class="footer-col" id="footer-col-3">
+        <h4>Contact</h4>
+        <p id="footer-email">info@eduvault.com</p>
+        <p id="footer-phone">+91 98765 43210</p>
+      </div>
+      <div class="footer-col" id="footer-col-4">
+        <h4>Follow Us</h4>
+        <div class="footer-social" id="footer-social"></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p id="footer-copyright">&copy; 2026 EduVault. All rights reserved.</p></div>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      <h2>Shopping Cart</h2>
+      <button class="modal-close" id="cart-close">&times;</button>
+    </div>
+    <div class="cart-items" id="cart-items"><p class="cart-empty">Your cart is empty</p></div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Total:</span><span id="cart-total-amount">₹0</span></div>
+      <button class="checkout-btn" id="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </div>
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <!-- Catalog Modal -->
+  <div class="modal-overlay" id="catalog-modal">
+    <div class="modal-box catalog-modal-box">
+      <button class="modal-close" id="catalog-close">&times;</button>
+      <h2>Product Catalog</h2>
+      <div class="catalog-grid" id="catalog-grid"></div>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div class="modal-overlay" id="login-modal">
+    <div class="modal-box login-modal-box">
+      <button class="modal-close" id="login-close">&times;</button>
+      <h2>Login</h2>
+      <form id="login-form">
+        <label>Email / Username</label>
+        <input type="text" id="login-username" placeholder="Enter email or admin username" required />
+        <label>Password</label>
+        <input type="password" id="login-password" placeholder="Enter password" required />
+        <button type="submit" class="login-submit-btn">Login</button>
+        <p class="login-error" id="login-error"></p>
+      </form>
+      <p class="login-switch">Don't have an account? <a href="#" id="show-register">Register here</a></p>
+    </div>
+  </div>
+
+  <!-- Register Modal -->
+  <div class="modal-overlay" id="register-modal">
+    <div class="modal-box register-modal-box">
+      <button class="modal-close" id="register-close">&times;</button>
+      <h2>Register</h2>
+      <form id="register-form">
+        <label>Full Name</label>
+        <input type="text" id="register-name" placeholder="Enter full name" required />
+        <label>Email</label>
+        <input type="email" id="register-email" placeholder="Enter email" required />
+        <label>Contact Number</label>
+        <input type="tel" id="register-contact" placeholder="Enter contact number" required />
+        <label>State</label>
+        <input type="text" id="register-state" placeholder="Enter state" required />
+        <label>City</label>
+        <input type="text" id="register-city" placeholder="Enter city" required />
+        <label>Password</label>
+        <input type="password" id="register-password" placeholder="Create password" required />
+        <label>Confirm Password</label>
+        <input type="password" id="register-confirm-password" placeholder="Confirm password" required />
+        <button type="submit" class="login-submit-btn">Register</button>
+        <p class="login-error" id="register-error"></p>
+      </form>
+      <p class="login-switch">Already have an account? <a href="#" id="show-login">Login here</a></p>
+    </div>
+  </div>
+
+  <!-- Admin Portal -->
+  <div class="admin-portal" id="admin-portal">
+    <div class="admin-header">
+      <button class="admin-logout-btn" id="admin-logout">Logout</button>
+    </div>
+    <div class="admin-tabs">
+      <button class="admin-tab active" data-tab="courses-tab">Courses</button>
+      <button class="admin-tab" data-tab="products-tab">Products</button>
+      <button class="admin-tab" data-tab="orders-tab">Orders</button>
+      <button class="admin-tab" data-tab="customers-tab">Customers</button>
+      <button class="admin-tab" data-tab="hero-banner-tab">Hero Banner</button>
+      <button class="admin-tab" data-tab="features-tab">Features</button>
+      <button class="admin-tab" data-tab="contact-tab">Contact Us</button>
+      <button class="admin-tab" data-tab="footer-tab">Footer</button>
+      <button class="admin-tab" data-tab="social-tab">Social Media</button>
+      <button class="admin-tab" data-tab="credentials-tab">Credentials</button>
+    </div>
+
+    <!-- Courses Tab -->
+    <div class="admin-tab-content active" id="courses-tab">
+      <h3>Manage Courses</h3>
+      <p class="admin-hint">Add, edit or delete courses. They appear on the website with image, title, description, price & discount.</p>
+      <div class="admin-form-card">
+        <h4 id="course-form-title">Add New Course</h4>
+        <input type="hidden" id="course-edit-id" value="" />
+        <label>Course Image</label>
+        <div class="img-upload-row">
+          <input type="file" id="course-img-input" accept="image/*" style="display:none" />
+          <button class="admin-save-btn small" id="course-img-trigger">Upload Image</button>
+          <img id="course-img-preview" class="admin-img-preview" src="" alt="" style="display:none" />
+        </div>
+        <label>Title</label>
+        <input type="text" id="course-title" placeholder="e.g. Web Development Masterclass" />
+        <label>Description</label>
+        <textarea id="course-desc" rows="3" placeholder="Short course description..."></textarea>
+        <label>Price (₹)</label>
+        <input type="number" id="course-price" placeholder="e.g. 1999" />
+        <label>Discount (%)</label>
+        <input type="number" id="course-discount" placeholder="e.g. 20" min="0" max="100" />
+        <label>PDF File (for paid access)</label>
+        <div class="img-upload-row">
+          <input type="file" id="course-pdf-input" accept=".pdf" style="display:none" />
+          <button class="admin-save-btn small" id="course-pdf-trigger">Upload PDF</button>
+          <span id="course-pdf-name" style="color: rgba(253,241,225,0.6); font-size: 0.9rem;"></span>
+        </div>
+        <div class="admin-form-actions">
+          <button class="admin-save-btn" id="save-course">Save Course</button>
+          <button class="admin-cancel-btn" id="cancel-course-edit" style="display:none">Cancel</button>
+        </div>
+      </div>
+      <div class="admin-list" id="admin-courses-list"></div>
+    </div>
+
+    <!-- Products Tab -->
+    <div class="admin-tab-content" id="products-tab">
+      <h3>Manage Products</h3>
+      <p class="admin-hint">Add, edit or delete catalog products. They appear in the catalog modal and slider.</p>
+      <div class="admin-form-card">
+        <h4 id="product-form-title">Add New Product</h4>
+        <input type="hidden" id="product-edit-id" value="" />
+        <label>Product Image</label>
+        <div class="img-upload-row">
+          <input type="file" id="product-img-input" accept="image/*" style="display:none" />
+          <button class="admin-save-btn small" id="product-img-trigger">Upload Image</button>
+          <img id="product-img-preview" class="admin-img-preview" src="" alt="" style="display:none" />
+        </div>
+        <label>Title</label>
+        <input type="text" id="product-title" placeholder="e.g. E-books & PDFs" />
+        <label>Description</label>
+        <textarea id="product-desc" rows="3" placeholder="Short product description..."></textarea>
+        <label>Price (₹)</label>
+        <input type="number" id="product-price" placeholder="e.g. 499" />
+        <label>PDF File (for paid access)</label>
+        <div class="img-upload-row">
+          <input type="file" id="product-pdf-input" accept=".pdf" style="display:none" />
+          <button class="admin-save-btn small" id="product-pdf-trigger">Upload PDF</button>
+          <span id="product-pdf-name" style="color: rgba(253,241,225,0.6); font-size: 0.9rem;"></span>
+        </div>
+        <div class="admin-form-actions">
+          <button class="admin-save-btn" id="save-product">Save Product</button>
+          <button class="admin-cancel-btn" id="cancel-product-edit" style="display:none">Cancel</button>
+        </div>
+      </div>
+      <div class="admin-list" id="admin-products-list"></div>
+    </div>
+
+    <!-- Orders Tab -->
+    <div class="admin-tab-content" id="orders-tab">
+      <h3>Manage Orders</h3>
+      <p class="admin-hint">View all customer orders and manage access.</p>
+      <div class="admin-list" id="admin-orders-list">
+        <p class="admin-list-empty">Loading orders...</p>
+      </div>
+    </div>
+
+    <!-- Customers Tab -->
+    <div class="admin-tab-content" id="customers-tab">
+      <h3>Manage Customers</h3>
+      <p class="admin-hint">View all registered customers and their details.</p>
+      <div class="admin-list" id="admin-customers-list">
+        <p class="admin-list-empty">Loading customers...</p>
+      </div>
+    </div>
+
+    <!-- Hero Banner Tab -->
+    <div class="admin-tab-content" id="hero-banner-tab">
+      <h3>Edit Hero Banner Section</h3>
+      <p class="admin-hint">Customize the section between slider and courses.</p>
+      
+      <div class="admin-form-card">
+        <h4>Banner Content</h4>
+        <label>Title</label>
+        <input type="text" id="admin-hero-title" placeholder="e.g. Transform Your Learning Journey" />
+        
+        <label>Description</label>
+        <textarea id="admin-hero-desc" rows="3" placeholder="Short description about your platform..."></textarea>
+        
+        <label>Button 1 Text</label>
+        <input type="text" id="admin-hero-btn1-text" placeholder="e.g. Explore Courses" />
+        <label>Button 1 Link</label>
+        <input type="text" id="admin-hero-btn1-link" placeholder="e.g. #dynamic-courses" />
+        
+        <label>Button 2 Text</label>
+        <input type="text" id="admin-hero-btn2-text" placeholder="e.g. Contact Us" />
+        <label>Button 2 Link</label>
+        <input type="text" id="admin-hero-btn2-link" placeholder="e.g. #contact-page-section" />
+        
+        <label>Banner Image</label>
+        <div class="img-upload-row">
+          <input type="file" id="hero-img-input" accept="image/*" style="display:none" />
+          <button class="admin-save-btn small" id="hero-img-trigger">Upload Image</button>
+          <img id="hero-img-preview" class="admin-img-preview" src="" alt="" style="display:none" />
+        </div>
+        
+        <button class="admin-save-btn" id="save-hero-banner">Save Hero Banner</button>
+      </div>
+    </div>
+
+    <!-- Features Tab -->
+    <div class="admin-tab-content" id="features-tab">
+      <h3>Manage Features Section</h3>
+      <p class="admin-hint">Add, edit or delete features. They appear below the hero banner.</p>
+      
+      <div class="admin-form-card">
+        <h4 id="feature-form-title">Add New Feature</h4>
+        <input type="hidden" id="feature-edit-id" value="" />
+        <label>Feature Icon (Emoji or Text)</label>
+        <input type="text" id="feature-icon" placeholder="e.g. 🎓 or ✓" />
+        <label>Feature Title</label>
+        <input type="text" id="feature-title" placeholder="e.g. Expert Instructors" />
+        <label>Feature Description</label>
+        <textarea id="feature-description" rows="2" placeholder="Short description..."></textarea>
+        <div class="admin-form-actions">
+          <button class="admin-save-btn" id="save-feature">Save Feature</button>
+          <button class="admin-cancel-btn" id="cancel-feature-edit" style="display:none">Cancel</button>
+        </div>
+      </div>
+      
+      <label>Section Title</label>
+      <input type="text" id="features-section-title" placeholder="e.g. Why Choose EduVault?" />
+      <button class="admin-save-btn" id="save-features-title">Save Section Title</button>
+      
+      <div class="admin-list" id="admin-features-list"></div>
+    </div>
+
+    <!-- Contact Us Tab -->
+    <div class="admin-tab-content" id="contact-tab">
+      <h3>Edit Contact Us Section</h3>
+      <label>Heading</label>
+      <input type="text" id="admin-contact-heading" placeholder="e.g. Get in Touch" />
+      <label>Description</label>
+      <textarea id="admin-contact-desc" rows="3" placeholder="Short description..."></textarea>
+      <label>Email</label>
+      <input type="text" id="admin-contact-email" placeholder="Email address" />
+      <label>Phone</label>
+      <input type="text" id="admin-contact-phone" placeholder="Phone number" />
+      <label>Address</label>
+      <input type="text" id="admin-contact-address" placeholder="Full address" />
+      <button class="admin-save-btn" id="save-contact">Save Contact Info</button>
+    </div>
+
+    <!-- Footer Tab -->
+    <div class="admin-tab-content" id="footer-tab">
+      <h3>Edit Footer</h3>
+      <label>Column 1 - Title</label>
+      <input type="text" id="admin-footer-col1-title" placeholder="Brand name" />
+      <label>Column 1 - Description</label>
+      <textarea id="admin-footer-col1-desc" rows="2" placeholder="Short about text..."></textarea>
+      <label>Footer Email</label>
+      <input type="text" id="admin-footer-email" placeholder="Email for footer" />
+      <label>Footer Phone</label>
+      <input type="text" id="admin-footer-phone" placeholder="Phone for footer" />
+      <label>Copyright Text</label>
+      <input type="text" id="admin-footer-copyright" placeholder="e.g. © 2026 EduVault" />
+      <button class="admin-save-btn" id="save-footer">Save Footer</button>
+    </div>
+
+    <!-- Social Media Tab -->
+    <div class="admin-tab-content" id="social-tab">
+      <h3>Social Media & Profile Links</h3>
+      <p class="admin-hint">Add your social media profile links. These will appear in the footer with icons.</p>
+      
+      <div class="admin-form-card">
+        <h4>Add Social Link</h4>
+        <label>Platform Name</label>
+        <select id="social-platform">
+          <option value="instagram">Instagram</option>
+          <option value="facebook">Facebook</option>
+          <option value="twitter">Twitter / X</option>
+          <option value="linkedin">LinkedIn</option>
+          <option value="youtube">YouTube</option>
+          <option value="github">GitHub</option>
+          <option value="telegram">Telegram</option>
+          <option value="whatsapp">WhatsApp</option>
+          <option value="custom">Custom</option>
+        </select>
+        <label id="custom-platform-label" style="display:none">Custom Platform Name</label>
+        <input type="text" id="social-custom-name" placeholder="e.g. Discord" style="display:none" />
+        <label>Profile URL</label>
+        <input type="url" id="social-url" placeholder="https://instagram.com/yourprofile" />
+        <button class="admin-save-btn" id="add-social-link">Add Link</button>
+      </div>
+
+      <h4 style="margin-top: 24px;">Your Social Links</h4>
+      <div class="admin-list" id="admin-social-list">
+        <p class="admin-list-empty">No social links added yet.</p>
+      </div>
+    </div>
+
+    <!-- Credentials Tab -->
+    <div class="admin-tab-content" id="credentials-tab">
+      <h3>Change Login Credentials</h3>
+      <p class="admin-hint">Change your admin username and password.</p>
+      <label>New Username</label>
+      <input type="text" id="admin-new-username" placeholder="New username" />
+      <label>New Password</label>
+      <input type="password" id="admin-new-password" placeholder="New password" />
+      <label>Confirm Password</label>
+      <input type="password" id="admin-confirm-password" placeholder="Confirm new password" />
+      <button class="admin-save-btn" id="save-credentials">Update Credentials</button>
+      <p class="credentials-error" id="credentials-error"></p>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
